@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+	
+<meta charset="utf-8">
+<title>Documento sin título</title>
+	 <link rel="stylesheet" href="css 3.css"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<style>
+       /* Estilos generales */
+body {
+    margin: 0;
+}
+
+.anuncio-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    gap: 1px;
+}
+
+/* Imagen del anuncio */
+.anuncio-imagen {
+    width: 30%; /* Imagen ocupa el 30% del espacio en pantallas grandes */
+    height: auto;
+}
+
+/* Estilo del texto */
+.headline {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+/* Estilo del botón */
+.cta-button {
+    padding: 5px 10px;
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #7B68EE;
+}
+
+/* Estilos para pantallas grandes */
+@media (max-width: 769px) {
+    .anuncio-contenido {
+        flex-direction: row;
+    }
+
+    .anuncio-imagen {
+        width: 130%;
+    }
+
+    .headline {
+        font-size: 24px;
+    }
+
+    .cta-button {
+        width: auto;
+    }
+}
+
+/* Estilos para móviles */
+@media (max-width: 480px) {
+    .anuncio-contenido {
+        align-items: center; /* Centra los elementos */
+        padding: 0; /* Elimina el padding adicional */
+        gap: 0; /* Asegura que no haya espacio extra entre elementos */
+    }
+
+    .anuncio-imagen {
+        width: %;
+        margin-bottom: 0; /* Elimina el espacio inferior */
+    }
+
+    .headline {
+        font-size: 20px;
+        margin: 40; /* Elimina márgenes extra en el texto */
+        padding: 0; /* Elimina padding si hay */
+    }
+
+    .cta-button {
+        width: 100%; /* Botón ocupa todo el ancho en móviles */
+        margin: 0; /* Elimina márgenes */
+        border-radius: 0; /* Alinea los bordes del botón al contenedor */
+    }
+}
+    </style>
+<body>
+	
+            <div class="anuncio-contenido">
+				<picture>
+					<source media="(max-width: 480px)" srcset="anuncio.elena.jpg">
+					<img src="https://raw.githubusercontent.com/elenacorro/elenacorro.github.io/refs/heads/main/anuncio.elena.jpg" class="anuncio-imagen" alt="Accesorios urbanos">
+				</picture>
+               
+                
+				
+					<h1 class="headline">para todos</h1>
+                   
+                   <a href="index.html" target="_blank">
+    <button class="cta-button">Descubre más</button>
+</a>
+               
+            </div>
+</body>
+</html>

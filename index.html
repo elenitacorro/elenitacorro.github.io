@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>CUULTURA - Página Principal</title>
+    <link rel="stylesheet" href="css 3.css"> 
+</head>
+<body>
+   
+    <!-- Header -->
+    <header>
+		
+		
+
+    
+        <div class="logo">
+            <!-- Enlace que lleva al inicio cuando se hace clic en el título -->
+            <a href="index.html" class="cuultura-title">★CUULTURA★</a>
+        </div>
+		
+        <a href="#" class="icono" onclick="MiFuncion()">
+  <i class="fa fa-bars"></i>
+</a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰ Menú</div>
+        
+
+        <nav id="navegador" class=" ">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html #contact">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Accessories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="html 2.html">Anillos</a></li>
+                        <li><a href="html 3.html">Collares</a></li>
+                        <li><a href="html 4.html">Pulseras</a></li>
+                        <li><a href="html 5.html">Otros</a></li>
+                    </ul>
+                </li>
+				
+				<script>
+function toggleMenu() {
+    const nav = document.getElementById("navegador");
+    if (nav.className === "") {
+        nav.className = "responsive";
+    } else {
+        nav.className = "";
+    }
+}
+
+document.querySelector('.icono').addEventListener('click', toggleMenu);
+</script>
+                <li><a href="index.html #contact">Contact</a></li>
+            </ul>
+        </nav>
+		
+    </header>
+	
+</div>
+	
+	<a href="index.html" target="_blank">
+    
+</a>
+	    <section class="anuncio">
+			<iframe src="html 6.html" frameborder="0" scrolling="no" width="728" height="90" class="anuncio2">
+			</iframe>
+			
+			 
+       
+            
+        
+    </section>
+    <!-- Hero Section -->
+   <main> 
+		<div class="slider">
+    <div class="slides">
+        <div class="slide">
+            <img src="imagen.y2k.jpg" alt="Imagen 1">
+        </div>
+        <div class="slide">
+            <img src="imagen.cool.jpg" alt="Imagen 2">
+        </div>
+    </div>
+    <!-- Botones de navegación -->
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+	   <script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.style.display = (i === index) ? 'block' : 'none';
+  });
+}
+
+function moveSlide(n) {
+  currentSlide += n;
+  if (currentSlide >= slides.length) currentSlide = 0;
+  if (currentSlide < 0) currentSlide = slides.length - 1;
+  showSlide(currentSlide);
+}
+
+showSlide(currentSlide);
+</script>
+		
+	<section class="hero">
+        <div class="hero-content">
+            
+        </div>
+    </section>
+
+    <!-- Quiénes Somos -->
+    <section class="about">
+        <h3>       Quiénes Somos</h3>
+        <p>En Cuultura, nos apasiona fusionar el estilo urbano con la moda de vanguardia. Somos un equipo creativo dedicado a ofrecer accesorios únicos que reflejan la energía y la diversidad de la vida urbana. Desde nuestros inicios, hemos buscado capturar la esencia del estilo Y2K con una selección de aros, collares, pulseras y anillos que no solo complementan tu look, sino que también cuentan una historia. Creemos en la autenticidad y en la individualidad, y cada pieza en nuestra colección está diseñada para destacar y empoderar a quienes la llevan. Únete a nuestra comunidad y descubre cómo Cuultura puede transformar tu estilo.</p>
+    </section>
+</main>
+    <footer id="contact">
+		
+		
+    
+		
+        <div class="social-icons">
+            <a href="#"><img src="instagram.jpg" alt="Instagram"></a>
+            <a href="#"><img src="tiktok.jpg" alt="TikTok"></a>
+            <a href="#"><img src="facebook.jpg" alt="Facebook"></a>
+        </div>
+        <p>&copy; 2024 Cuultura. Todos los derechos reservados.</p>
+		
+    
+  
+    <footer id="contact" style="position: relative;">
+    <div class="footer-form-container">
+        <form id="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="thank-you-message" style="display:none;">¡Gracias por contactarnos!</p>
+    </div>
+		<script>
+    // Evento que se dispara al enviar el formulario
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita que la página se recargue
+        
+        // Mostrar el mensaje de agradecimiento
+        document.getElementById('thank-you-message').style.display = 'block';
+        
+        // Resetear el formulario
+        this.reset();
+    });
+</script>
+</footer>
+    </footer>
+	
+<script src="java script.js">
+	</script>
+  <script src="slider.js"></script>
+</body>
+</html>
