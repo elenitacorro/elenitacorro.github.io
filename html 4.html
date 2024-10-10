@@ -40,6 +40,18 @@
                         <li><a href="html 5.html">Otros</a></li>
                     </ul>
                 </li>
+		    <script>
+function toggleMenu() {
+    const nav = document.getElementById("navegador");
+    if (nav.className === "") {
+        nav.className = "responsive";
+    } else {
+        nav.className = "";
+    }
+}
+
+document.querySelector('.icono').addEventListener('click', toggleMenu);
+</script>
                  <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
