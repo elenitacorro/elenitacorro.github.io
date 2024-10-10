@@ -44,6 +44,18 @@
               
                  <li><a href="index.html#contact">Contact</a></li>
             </ul>
+		<script>
+function toggleMenu() {
+    const nav = document.getElementById("navegador");
+    if (nav.className === "") {
+        nav.className = "responsive";
+    } else {
+        nav.className = "";
+    }
+}
+
+document.querySelector('.icono').addEventListener('click', toggleMenu);
+</script>
         </nav>
     </header>
 
