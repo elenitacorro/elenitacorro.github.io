@@ -84,7 +84,7 @@ header {
 
 .dropdown-menu {
     display: none;
-    position: absolute;
+    position: static;
     background: #d0d0d0; /* Fondo plateado */
     list-style: none;
     padding: 0;
