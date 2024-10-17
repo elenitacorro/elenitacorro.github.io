@@ -1,119 +1,116 @@
 <!doctype html>
-<html>
+<html lang="es">
 
 <head>
-	
-<meta charset="utf-8">
-<title>Documento sin título</title>
-	 <link rel="stylesheet" href="css 3.css"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-</head>
-<style>
-       /* Estilos generales */
-body {
-    margin: 0;
-}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Anuncio - Cuultura</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0; /* Fondo gris claro */
+        }
 
-.anuncio-contenido {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    gap: 1px;
-}
+        /* Contenedor principal del anuncio */
+        .anuncio-contenido {
+            width: 728px;
+            height: 90px;
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #ffffff; /* Fondo blanco */
+        }
 
-/* Imagen del anuncio */
-.anuncio-imagen {
-    width: 30%; /* Imagen ocupa el 30% del espacio en pantallas grandes */
-    height: auto;
-}
+        /* Imagen del anuncio */
+        .anuncio-imagen {
+            width: 250px; /* Ajusta el tamaño de la imagen */
+			height: 80px;
+            height: auto; /* Mantiene la proporción */
+            object-fit: cover; /* Asegura que la imagen no se deforme */
+            margin-right: 10px; /* Espacio a la derecha de la imagen */
+        }
 
-/* Estilo del texto */
-.headline {
-    font-size: 24px;
-    text-align: center;
-    margin: 0 20px;
-}
+        /* Texto centrado */
+        .headline {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            flex: 1;
+            margin: 0 10px; /* Espacio a los lados del texto */
+        }
 
-/* Estilo del botón */
-.cta-button {
-    padding: 5px 10px;
-    background-color: #8A2BE2;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+        /* Botón */
+        .cta-button {
+            padding: 8px 15px;
+            background-color: #8A2BE2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
-.cta-button:hover {
-    background-color: #7B68EE;
-}
+        .cta-button:hover {
+            background-color: #7B68EE;
+        }
 
-/* Estilos para pantallas grandes */
-@media (max-width: 769px) {
-    .anuncio-contenido {
-        flex-direction: row;
-    }
+        /* Estilos para pantallas móviles */
+        @media (max-width: 480px) {
+            .anuncio-contenido {
+                width: 300px;
+                height: 600px;
+                flex-direction: column;
+                align-items: center; /* Centra los elementos */
+            }
 
-    .anuncio-imagen {
-        width: 130%;
-    }
+            .anuncio-imagen {
+                width: 90%; /* Ocupa todo el ancho en móviles */
+                height: auto;
+                margin-top: 15px; /* Margen superior para la imagen */
+            }
 
-    .headline {
-        font-size: 24px;
-    }
+            .headline {
+                font-size: 24px;
+                margin: 10px 0; /* Espacio superior e inferior */
+            }
 
-    .cta-button {
-        width: auto;
-    }
-}
-
-/* Estilos para móviles */
-@media (max-width: 480px) {
-    .anuncio-contenido {
-        align-items: center; /* Centra los elementos */
-        padding: 0; /* Elimina el padding adicional */
-        gap: 0; /* Asegura que no haya espacio extra entre elementos */
-    }
-
-    .anuncio-imagen {
-        width: %;
-        margin-bottom: 0; /* Elimina el espacio inferior */
-    }
-
-    .headline {
-        font-size: 20px;
-        margin: 40; /* Elimina márgenes extra en el texto */
-        padding: 0; /* Elimina padding si hay */
-    }
-
-    .cta-button {
-        width: 100%; /* Botón ocupa todo el ancho en móviles */
-        margin: 0; /* Elimina márgenes */
-        border-radius: 0; /* Alinea los bordes del botón al contenedor */
-    }
-}
+            .cta-button {
+                font-size: 16px;
+                width: 100%; /* Botón ocupa todo el ancho */
+            }
+        }
     </style>
+</head>
+
 <body>
-	
-            <div class="anuncio-contenido">
-				<picture>
-					<source media="(max-width: 480px)" srcset="anuncio.elena.jpg">
-					<img src="https://raw.githubusercontent.com/elenacorro/elenacorro.github.io/refs/heads/main/anuncio.elena.jpg" class="anuncio-imagen" alt="Accesorios urbanos">
-				</picture>
-               
-                
-				
-					<h1 class="headline">para todos</h1>
-                   
-                   <a href="index.html" target="_blank">
-    <button class="cta-button">Descubre más</button>
-</a>
-               
-            </div>
+
+    <div class="anuncio-contenido">
+        <!-- Imagen del anuncio -->
+        <picture>
+            <source media="(max-width: 480px)" srcset="anuncio.nuevo.png">
+            <img src="https://raw.githubusercontent.com/elenacorro/elenacorro.github.io/main/anuncio.elena.jpg" class="anuncio-imagen" alt="Accesorios urbanos">
+        </picture>
+
+        <!-- Texto centrado -->
+        <div class="headline">
+            Accesorios urbanos para todos
+        </div>
+
+        <!-- Botón de llamada a la acción -->
+        <a href="index.html" target="_blank">
+            <button class="cta-button">Descubre más</button>
+        </a>
+    </div>
+
 </body>
+
 </html>
