@@ -84,7 +84,7 @@ header {
 
 .dropdown-menu {
     display: none;
-    position: static;
+    position: absolute;
     background: #d0d0d0; /* Fondo plateado */
     list-style: none;
     padding: 0;
@@ -347,6 +347,20 @@ footer p {
     min-width: 100%;
 }
 
+.dropdown-menu {
+    display: none;
+    position: static;
+    background: #d0d0d0; /* Fondo plateado */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+
 /* Botones de navegación (izquierda y derecha) */
 .prev, .next {
     position: absolute;
@@ -369,11 +383,11 @@ footer p {
 }
 
 .anuncio {
-    display: flex; 
+    display: flex;
+    align-items: flex-start; 
     padding: 10px; 
-    justify-content: center; 
+	justify-content: center;
     
- 
 }
 
 .anuncio-contenido {
