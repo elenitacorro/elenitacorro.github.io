@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css 3.css">
+	<link rel="stylesheet" href="css/lightbox.min.css">
     <meta charset="UTF-8">
     <title>Anillos - Cuultura</title>
     <link rel="stylesheet" href="style.css">
@@ -21,12 +21,10 @@
             <a href="index.html" class="cuultura-title">★CUULTURA★</a>
         </div>
 		
-<a href="#" class="icono" onclick="MiFuncion()">
+ <a href="#" class="icono" onclick="MiFuncion()">
   <i class="fa fa-bars"></i>
 </a>
-		
-		
-       <div class="menu-toggle" onclick="toggleMenu()">☰ Menú</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰ Menú</div>
         
 
         <nav id="navegador" class=" ">
@@ -41,8 +39,7 @@
                         <li><a href="html 4.html">Pulseras</a></li>
                         <li><a href="html 5.html">Otros</a></li>
                     </ul>
-	       </li>
-			
+                </li>
                 <li><a href="index.html#contact">Contact</a></li>
 				 
             </ul>
@@ -54,35 +51,24 @@
         <h2>Anillos</h2>
         <div class="gallery">
             <div class="gallery-item">
-                <img src="anillo 1.jpg" alt="Anillo de Plata">
+                <a href="anillo 1 grande.jpg" data-lightbox="fotos"><img src="anillo 1.jpg" alt="Anillo de Plata"></a>
                 <p>Anillo de Plata - $500</p>
             </div>
             <div class="gallery-item">
-                <img src="anillo 2.jpg" alt="Anillo de Oro">
+                <a href="anillo 2 grande.jpg" data-lightbox="fotos"><img src="anillo 2.jpg" alt="Anillo de Oro"></a>
                 <p>Anillo de Oro - $800</p>
             </div>
             <div class="gallery-item">
-                <img src="anillo 3.jpg" alt="Anillo de Acero">
+                <a href="anillo 3 grande.jpg" data-lightbox="fotos"><img src="anillo 3.jpg" alt="Anillo de Acero"></a>
                 <p>Anillo de Acero - $300</p>
             </div>
             <div class="gallery-item">
-                <img src="anillo 4.jpg" alt="Anillo de Piedra">
+                <a href="anillo 4 grande.jpg" data-lightbox="fotos"><img src="anillo 4.jpg" alt="Anillo de Piedra"></a>
                 <p>Anillo de Piedra - $450</p>
             </div>
         </div>
     </section>
-<script>
-function toggleMenu() {
-    const nav = document.getElementById("navegador");
-    if (nav.className === "") {
-        nav.className = "responsive";
-    } else {
-        nav.className = "";
-    }
-}
 
-document.querySelector('.icono').addEventListener('click', toggleMenu);
-</script>
     <!-- Footer -->
     <footer>
 		 <footer id="contact">
@@ -95,5 +81,6 @@ document.querySelector('.icono').addEventListener('click', toggleMenu);
     </footer>
 <script src="java script.js">
 	</script>
+		<script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
