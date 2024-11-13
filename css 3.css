@@ -607,4 +607,51 @@ body {
         border-radius: 0; /* Alinea los bordes del botón al contenedor */
     }
 }
-    
+
+.presentacion {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+ 
+.diapositiva {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  opacity: 0;
+  z-index: 0;
+}
+ 
+.activa {
+  opacity: 1;
+}
+
+.main-button, footer button {
+    background-color: #ff4da6;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.3s, background-color 0.3s;
+	
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-button
+:hover, main button:hover {
+    transform: scale(1.1);
+    background-color: #ff7ec4;
+}
