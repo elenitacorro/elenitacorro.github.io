@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentación Cuultura</title>
     <style>
+		
+		
         body, html {
             margin: 0;
             padding: 0;
@@ -17,6 +19,9 @@
             scroll-snap-type: y mandatory;
             overflow-y: scroll;
         }
+		.container {
+    overflow: hidden;
+}
 
         .slide {
             width: 100vw;
@@ -65,13 +70,13 @@
 
         /* Navegación centrada */
         .navigation {
-            display: flex;
+            text-align: center;
             justify-content: center;
             position: fixed;
             top: 10px;
             width: 100%;
             z-index: 10;
-            margin-top: 20px; /* Ajuste del margen superior */
+            margin-top: 0px; /* Ajuste del margen superior */
         }
 
         .navigation a {
@@ -81,6 +86,7 @@
             padding: 10px 15px;
             border-radius: 5px;
             margin: 0 10px;
+			display: inline-block;
         }
 
         .navigation a:hover {
@@ -233,9 +239,111 @@ button:hover {
     transform: scale(1.1);
     background-color: #ff7ec4; /* Un rosa más claro */
 }
+		.navbar {
+        display: flex; /* Alinea elementos en fila */
+        justify-content: center; /* Centra los botones horizontalmente */
+        align-items: center; /* Centra los botones verticalmente */
+        gap: 20px; /* Espacio entre los botones */
+        position: absolute; /* Permite superponer elementos */
+        top: 10%; /* Ajusta la altura para que no tape el título */
+        width: 100%; /* Ocupa todo el ancho de la página */
+    }
+
+    /* Estilo de los botones */
+    .navbar button {
+        padding: 10px 20px; /* Espaciado interno de los botones */
+        font-size: 16px; /* Tamaño de la fuente */
+        font-weight: bold; /* Texto en negrita */
+        color: #fff; /* Color del texto */
+        background-color: #000; /* Color de fondo */
+        border: none; /* Sin bordes */
+        border-radius: 5px; /* Bordes redondeados */
+        cursor: pointer; /* Cambia el cursor al pasar el mouse */
+        transition: background-color 0.3s ease; /* Animación de color */
+    }
+
+    /* Efecto al pasar el mouse por los botones */
+    .navbar button:hover {
+        background-color: #444; /* Color más claro al pasar el mouse */
+    }
+
+    /* Estilo del título */
+    .title {
+        text-align: center; /* Centrar el texto */
+        font-size: 36px; /* Tamaño del título */
+        font-weight: bold; /* Negrita */
+        margin-top: 20px; /* Espacio superior */
+    }
+		  #sitemap-slide img,
+    #final-slide img {
+        max-width: 80%; /* Ancho máximo para pantallas grandes */
+        height: auto; /* Mantén la proporción de la imagen */
+        margin: 20px auto; /* Centrar imagen con espacio alrededor */
+        display: block; /* Asegura que se centre correctamente */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra opcional */
+        border-radius: 10px; /* Bordes redondeados */
+    }
+		
+		@media (max-width: 300px) {
+    body, html {
+        width: 100%;
+        overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .slide {
+        width: 100%;
+        padding: 10px; /* Agrega espacio interno para evitar contenido pegado al borde */
+        box-sizing: border-box; /* Incluye el padding en el ancho total */
+    }
+
+    .y2k-title {
+        font-size: 2em; /* Ajusta el tamaño del título */
+        margin-top: 10px;
+    }
+
+    .info p {
+        font-size: 1em; /* Reduce el tamaño del texto informativo */
+    }
+
+    .navigation {
+        flex-direction: column; /* Cambia los enlaces a una columna */
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    .navigation a {
+        margin: 5px 0;
+        padding: 8px 12px;
+        font-size: 14px; /* Reduce el tamaño del texto */
+    }
+
+    .sobreque-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sobreque-gallery img {
+        width: 80px; /* Reduce el tamaño de las imágenes */
+    }
+
+    .wireframe-images img {
+        max-width: 100%; /* Asegura que las imágenes no excedan el ancho disponible */
+        height: auto;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px; /* Ajusta el tamaño de los botones */
+    }
+}
     </style>
 </head>
 <body>
+	
     <div class="navigation">
         <a href="#main-slide" onclick="navigateToSlide('main-slide')">Inicio</a>
         <a href="#sobreque-slide" onclick="navigateToSlide('sobreque-slide')">Sobre qué</a>
