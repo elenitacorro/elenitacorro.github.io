@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Passo Producciones — Espacios que transforman experiencias</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;1,9..40,200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <canvas id="canvas"></canvas>
+
+  <nav id="nav">
+    <div class="nav-logo"><span class="logo-p">P</span>ASSO</div>
+    <ul class="nav-links">
+      <li><a href="#" data-section="1">Nosotros</a></li>
+      <li><a href="#" data-section="2">Proyectos</a></li>
+      <li><a href="#" data-section="4">Servicios</a></li>
+      <li><a href="#" data-section="5">Contacto</a></li>
+    </ul>
+    <a href="#" data-section="5" class="btn-contact">Hablemos</a>
+  </nav>
+
+  <div id="progress-bar"><div id="progress-fill"></div></div>
+
+  <div id="section-indicator">
+    <span id="section-num">01</span>
+    <div class="indicator-line"></div>
+    <span id="section-name">Inicio</span>
+  </div>
+
+  <div id="scroll-wrapper">
+
+    <section class="scene" id="s-hero" data-label="Inicio">
+      <div class="scene-content hero-content">
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          <span>Buenos Aires · Argentina</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="line">Creamos</span>
+          <span class="line accent-line">espacios</span>
+          <span class="line">que transforman</span>
+          <span class="line">experiencias.</span>
+        </h1>
+        <div class="hero-sub">
+          <p>Arquitectura efímera · Producción · Montaje</p>
+        </div>
+        <div class="scroll-cue">
+          <div class="scroll-line"></div>
+          <span>SCROLL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" id="s-nosotros" data-label="Nosotros">
+      <div class="scene-content side-content left-content">
+        <div class="content-block">
+          <span class="section-label">001 / Nosotros</span>
+          <h2 class="section-title">Construimos<br>y destruimos.</h2>
+          <p class="section-body">
+            Somos un estudio de producción especializado en arquitectura efímera, montaje técnico de alto nivel y diseño experiencial. Creamos desde el stand más elaborado hasta la escenografía más ambiciosa.
+          </p>
+          <p class="section-body">
+            Cada proyecto comienza en el vacío y termina siendo un espacio que vive, respira y transforma a quien lo habita — aunque sea por unas horas.
+          </p>
+          <div class="stats-row">
+            <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Años</span></div>
+            <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Proyectos</span></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">Países</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" id="s-proyectos" data-label="Proyectos">
+      <div class="scene-content">
+        <div class="content-block centered">
+          <span class="section-label">002 / Proyectos</span>
+          <h2 class="section-title large-title">Cada espacio<br>es único.</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-item" data-index="0">
+            <div class="project-tag">Stand · ExpoBA 2024</div>
+            <div class="project-title">Arquitectura Comercial</div>
+            <div class="project-area">400 m²</div>
+          </div>
+          <div class="project-item" data-index="1">
+            <div class="project-tag">Retail · Buenos Aires</div>
+            <div class="project-title">Flagship Store</div>
+            <div class="project-area">250 m²</div>
+          </div>
+          <div class="project-item" data-index="2">
+            <div class="project-tag">Evento · Corporate</div>
+            <div class="project-title">Escenografía Premium</div>
+            <div class="project-area">800 m²</div>
+          </div>
+          <div class="project-item" data-index="3">
+            <div class="project-tag">Instalación · Arte</div>
+            <div class="project-title">Arquitectura Efímera</div>
+            <div class="project-area">180 m²</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" id="s-experiencia" data-label="Proceso">
+      <div class="scene-content centered-content">
+        <div class="content-block centered">
+          <span class="section-label">003 / Proceso</span>
+          <h2 class="section-title">De la idea<br>al espacio.</h2>
+          <p class="section-body center-text">
+            Diseñamos, producimos y montamos cada instalación con precisión milimétrica. Desde el concepto hasta el desmontaje.
+          </p>
+          <div class="process-steps">
+            <div class="step"><span class="step-num">01</span><span class="step-label">Concepto</span></div>
+            <div class="step-divider"></div>
+            <div class="step"><span class="step-num">02</span><span class="step-label">Producción</span></div>
+            <div class="step-divider"></div>
+            <div class="step"><span class="step-num">03</span><span class="step-label">Montaje</span></div>
+            <div class="step-divider"></div>
+            <div class="step"><span class="step-num">04</span><span class="step-label">Experiencia</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" id="s-servicios" data-label="Servicios">
+      <div class="scene-content side-content right-content">
+        <div class="content-block">
+          <span class="section-label">004 / Servicios</span>
+          <h2 class="section-title">Lo que<br>hacemos.</h2>
+          <ul class="services-list">
+            <li class="service-item">
+              <span class="service-icon">◈</span>
+              <div>
+                <div class="service-name">Stands y Pabellones</div>
+                <div class="service-desc">Ferias, expos y eventos comerciales de alto impacto</div>
+              </div>
+            </li>
+            <li class="service-item">
+              <span class="service-icon">◈</span>
+              <div>
+                <div class="service-name">Retail & Espacios Comerciales</div>
+                <div class="service-desc">Flagship stores, pop-ups y showrooms</div>
+              </div>
+            </li>
+            <li class="service-item">
+              <span class="service-icon">◈</span>
+              <div>
+                <div class="service-name">Escenografías y Eventos</div>
+                <div class="service-desc">Producciones corporativas y culturales</div>
+              </div>
+            </li>
+            <li class="service-item">
+              <span class="service-icon">◈</span>
+              <div>
+                <div class="service-name">Arquitectura Efímera</div>
+                <div class="service-desc">Instalaciones artísticas y experienciales</div>
+              </div>
+            </li>
+            <li class="service-item">
+              <span class="service-icon">◈</span>
+              <div>
+                <div class="service-name">Producción Integral</div>
+                <div class="service-desc">Gestión completa de materiales, logística y montaje</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" id="s-contacto" data-label="Contacto">
+      <div class="scene-content contact-content">
+        <div class="contact-grid">
+          <div class="contact-left">
+            <span class="section-label">005 / Contacto</span>
+            <h2 class="section-title">Empecemos<br>a construir.</h2>
+            <div class="contact-info">
+              <div class="contact-item">
+                <span class="contact-label">Email</span>
+                <a href="mailto:info@passoproducciones.com" class="contact-value">info@passoproducciones.com</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Teléfono</span>
+                <a href="tel:+541112345678" class="contact-value">+54 11 1234-5678</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Ubicación</span>
+                <span class="contact-value">Buenos Aires, Argentina</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form class="contact-form glass-form" id="contact-form">
+              <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" placeholder="Tu nombre completo" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label>Empresa</label>
+                <input type="text" placeholder="Nombre de tu empresa" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label>Proyecto</label>
+                <textarea placeholder="Contanos sobre tu proyecto..." rows="3"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <span>Enviar mensaje</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <footer class="site-footer">
+          <span>© 2024 Passo Producciones</span>
+          <span>Arquitectura Efímera · Buenos Aires</span>
+        </footer>
+      </div>
+    </section>
+
+  </div>
+
+  <div id="cursor">
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+  </div>
+
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">PASSO</div>
+      <div class="loader-bar"><div class="loader-fill" id="loader-fill"></div></div>
+      <span class="loader-text" id="loader-text">Iniciando experiencia...</span>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.45/bundled/lenis.min.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
